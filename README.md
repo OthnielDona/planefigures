@@ -18,16 +18,10 @@ polygon(4, 100)
 ## Road map
 At this stage, only [regular polygons](https://en.wikipedia.org/wiki/Regular_polygon) are supported. The aim however, is to support regular as well as irregular shapes.
 
-[] Scalene triangle
-
-[] Isosceles triangle
-
-[] Right triangle
-
-[] Obtuse triangle
-
-[x] Rectangle
-
-[] Parallelogram
-
-[] Trapezium
+- [ ] Scalene triangle
+- [ ] Isosceles triangle
+- [ ] Right triangle
+- [ ] Obtuse triangle
+- [x] Rectangle
+- [ ] Parallelogram
+- [ ] Trapezium
