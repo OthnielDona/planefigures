@@ -1,5 +1,5 @@
 import os.path
-from setuptools import setup
+from setuptools import setup, find_packages
 
 # The directory containing this file
 HERE = os.path.abspath(os.path.dirname(__file__))
@@ -18,7 +18,7 @@ setup(
     long_description=README,
     long_description_content_type="text/markdown",
     url="https://github.com/OthnielDona/planefigures",
-    packages=["figures"],
+    packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
