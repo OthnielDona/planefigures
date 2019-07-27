@@ -11,7 +11,7 @@ with open(os.path.join(HERE, "README.md")) as fid:
 # This call to setup() does all the work
 setup(
     name="planefigures",
-    version="0.1.2",
+    version="0.2.0",
     author="Othniel Dona Monote",
     author_email="othnieldona@gmail.com",
     description="A turtle based package that makes drawing common geometric plane shapes a breeze.",
