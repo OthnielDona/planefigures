@@ -1,7 +1,36 @@
+"""
+planefigures is a python package based on the turtle library.
+It takes the pain out of drawing plain shapes.
+
+Example
+
+    import figures
+    import turtle
+
+    figures.color('red','yellow')
+
+    figures.begin_fill()
+
+    for n in range(8):
+        figures.polygon(8, 80)
+        turtle.right(360/8)
+
+    figures.end_fill()
+
+Functions
+
+    polygon(sides:int, length:int) -- Draw a regular polygon of given sides with each side of given length.
+    rectangle(length:int, breadth:int) -- Draw a rectangle of given length and breadth.
+    circle(radius, extent=None, steps=None) -- Draw a circle of given radius. This function works exactly like turtle.circle().
+    color(*args) -- Return or set pencolor and fillcolor. This function works exactly like turtle.color().
+    begin_fill() -- To be called just before drawing a shape to be filled.
+    end_fill() -- Fill the shape drawn after the last call to begin_fill().
+"""
+
 import turtle
 
 def polygon(sides:int, length:int):
-    """The function draws polygon of various sizes
+    """Draw a regular polygon of given sides with each side of given length.
     
     Arguments:
         sides {int} -- The number of sides of the polygon
@@ -16,7 +45,7 @@ def polygon(sides:int, length:int):
         
 
 def rectangle(length:int, breadth:int):
-    """The function draws rectangle
+    """Draw a rectangle of given length and breadth.
     
     Arguments:
         length {int} -- The length of the quadrilateral in pixels
