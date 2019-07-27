@@ -10,7 +10,7 @@ Python 3 is supported.
 ## Example
 Try out this little peace of code and be amazed.
 ```python
-import figures
+import planefigures as figures
 import turtle
 
 figures.color('red','yellow')
@@ -33,5 +33,5 @@ At this stage, only [regular polygons](https://en.wikipedia.org/wiki/Regular_pol
 - [ ] Right triangle
 - [ ] Obtuse triangle
 - [x] Rectangle
-- [ ] Parallelogram
+- [x] Parallelogram
 - [ ] Trapezium
