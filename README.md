@@ -7,17 +7,27 @@ pip install planefigures
 ```
 Python 3 is supported.
 
-## How to use
+## Example
+Try out this little peace of code and be amazed.
 ```python
-from figures import polygon
+import figures
+import turtle
 
-# polygon(sides, length)
-polygon(4, 100)
+figures.color('red','yellow')
+
+figures.begin_fill()
+
+for n in range(8):
+    figures.polygon(8, 80)
+    turtle.right(360/8)
+
+figures.end_fill()
 ```
 
 ## Road map
 At this stage, only [regular polygons](https://en.wikipedia.org/wiki/Regular_polygon) are supported. The aim however, is to support regular as well as irregular shapes.
 
+- [x] Circle
 - [ ] Scalene triangle
 - [ ] Isosceles triangle
 - [ ] Right triangle
