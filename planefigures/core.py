@@ -28,6 +28,7 @@ Functions
 """
 
 import turtle
+import math
 
 def polygon(sides:int, length:int):
     """Draw a regular polygon of given sides with each side of given length.
@@ -76,3 +77,31 @@ def parallelogram(length:int, breadth:int, angle:float):
     turtle.left(angle)
     turtle.forward(breadth)
     turtle.left(180-angle)
+
+
+def righttriangle(a=None, b=None, c=None):
+    """[summary]
+    
+    Keyword Arguments:
+        a {[type]} -- [description] (default: {None})
+        b {[type]} -- [description] (default: {None})
+        c {[type]} -- [description] (default: {None})
+    """
+    
+    if a and b:
+        c = math.hypot(a,b)
+    elif a and c:
+        b = math.sqrt(c**c - a**a)
+    elif b and c:
+        a = math.sqrt(c**c - b**b)
+    else:
+        print('You must provide at least two out of the three sides.')
+
+    x = math.degrees(math.asin(a/c))
+
+    turtle.forward(b)
+    turtle.left(180-x)
+    turtle.forward(c)
+    turtle.left(90+x)
+    turtle.forward(a)
+    turtle.left(90)
