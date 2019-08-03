@@ -36,6 +36,13 @@ def polygon(sides:int, length:int):
         sides {int} -- The number of sides of the polygon
         length {int} -- The length of each side of the polygon in pixels
     """
+    
+    # Make sure the arguments are of type int
+    if not isinstance(sides, int):
+        return print('Sides must be an integer')
+    if not isinstance(length, int):
+        return print('length must be an integer')
+    
     # (sides - 2) * 180 -- defines sum of angles in any polygon
     angle = ((sides - 2) * 180) / sides
 
@@ -52,6 +59,12 @@ def rectangle(length:int, breadth:int):
         breadth {int} -- The breadth of the quadrilateral in pixels
     """
     
+    # Make sure the arguments are of type int
+    if not isinstance(length, int):
+        return print('length must be an integer')
+    if not isinstance(breadth, int):
+        return print('breadth must be an integer')
+    
     for x in range(2):
         turtle.forward(length)
         turtle.right(90)
@@ -67,6 +80,14 @@ def parallelogram(length:int, breadth:int, angle:float):
         breadth {int} -- The breadth of the parallelogram
         angle {float} -- A pair of opposite angles
     """
+    
+    # Make sure the arguments are of the right type
+    if not isinstance(length, int):
+        return print('length must be an integer')
+    if not isinstance(breadth, int):
+        return print('breadth must be an integer')
+    if not isinstance(angle, float):
+        return print('angle must be a float')
     
     turtle.forward(length)
     turtle.left(angle)
