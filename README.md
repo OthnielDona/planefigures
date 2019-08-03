@@ -30,7 +30,7 @@ At this stage, only [regular polygons](https://en.wikipedia.org/wiki/Regular_pol
 - [x] Circle
 - [ ] Scalene triangle
 - [ ] Isosceles triangle
-- [ ] Right triangle
+- [x] Right triangle
 - [ ] Obtuse triangle
 - [x] Rectangle
 - [x] Parallelogram
