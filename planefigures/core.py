@@ -39,9 +39,9 @@ def polygon(sides:int, length:int):
     
     # Make sure the arguments are of type int
     if not isinstance(sides, int):
-        return print('Sides must be an integer')
+        raise TypeError('Please provide an int argument')
     if not isinstance(length, int):
-        return print('length must be an integer')
+        raise TypeError('Please provide an int argument')
     
     # (sides - 2) * 180 -- defines sum of angles in any polygon
     angle = ((sides - 2) * 180) / sides
@@ -83,11 +83,11 @@ def parallelogram(length:int, breadth:int, angle:float):
     
     # Make sure the arguments are of the right type
     if not isinstance(length, int):
-        return print('length must be an integer')
+        raise TypeError('Please provide an int argument')
     if not isinstance(breadth, int):
-        return print('breadth must be an integer')
-    if not isinstance(angle, float):
-        return print('angle must be a float')
+        raise TypeError('Please provide an int argument')
+    if not isinstance(angle, float) or not isinstance(angle, int):
+        raise TypeError('Please provide a float argument')
     
     turtle.forward(length)
     turtle.left(angle)
