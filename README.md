@@ -24,6 +24,12 @@ for n in range(8):
 figures.end_fill()
 ```
 
+Or better still ...
+```python
+python -m planefigures.example
+```
+and enjoy.
+
 ## Road map
 At this stage, only [regular polygons](https://en.wikipedia.org/wiki/Regular_polygon) are supported. The aim however, is to support regular as well as irregular shapes.
 
