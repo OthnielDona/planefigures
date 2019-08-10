@@ -62,9 +62,9 @@ def rectangle(length:int, breadth:int):
     
     # Make sure the arguments are of type int
     if not isinstance(length, int):
-        return print('length must be an integer')
+        raise TypeError('Please provide an int argument')
     if not isinstance(breadth, int):
-        return print('breadth must be an integer')
+        raise TypeError('Please provide an int argument')
     
     for x in range(2):
         turtle.forward(length)
