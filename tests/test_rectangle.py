@@ -1,4 +1,4 @@
-"""Tests for polygon function"""
+"""Tests for rectangle function"""
 import pytest
 import planefigures as figures
 
