@@ -41,3 +41,11 @@ At this stage, only [regular polygons](https://en.wikipedia.org/wiki/Regular_pol
 - [x] Rectangle
 - [x] Parallelogram
 - [ ] Trapezium
+
+## Contributing
+
+Check our [contribution guide](CONTRIBUTING.md).
+
+## License
+
+`planefigures` is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
