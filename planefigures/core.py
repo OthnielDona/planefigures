@@ -4,7 +4,7 @@ It takes the pain out of drawing plain shapes.
 
 Example
 
-    import figures
+    import planefigures as figures
     import turtle
 
     figures.color('red','yellow')
@@ -21,6 +21,8 @@ Functions
 
     polygon(sides:int, length:int) -- Draw a regular polygon of given sides with each side of given length.
     rectangle(length:int, breadth:int) -- Draw a rectangle of given length and breadth.
+    parallelogram(length:int, breadth:int, angle:float) -- Draw a parallelogram of a given length, breadth and angle.
+    righttriangle(a=None, b=None, c=None) -- Draw a right-angled triangle with vertical side a, horizontal side b, hypotenus c.
     circle(radius, extent=None, steps=None) -- Draw a circle of given radius. This function works exactly like turtle.circle().
     color(*args) -- Return or set pencolor and fillcolor. This function works exactly like turtle.color().
     begin_fill() -- To be called just before drawing a shape to be filled.
